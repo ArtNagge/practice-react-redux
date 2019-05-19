@@ -1,16 +1,28 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 import './header.css';
+import {connect} from "react-redux";
 
-export default class Header extends Component {
+class Header extends Component {
     render () {
+        const {countCart} = this.props;
         return (
             <header>
                 <nav>
                     <NavLink to="/">Главная</NavLink>
-                    <NavLink to="/cart">Корзина</NavLink>
+                    <NavLink to="/cart">
+                        Корзина
+                        <span>
+                            {countCart}
+                        </span>
+                    </NavLink>
                 </nav>
             </header>
         )
     }
 }
+
+const mapStateToProps = ({countCart}) => {
+    return {countCart}
+};
+export default connect(mapStateToProps)(Header);

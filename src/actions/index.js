@@ -7,7 +7,6 @@ const starShipsLoaded = (newStarship) => {
 };
 
 const addCart = (idItem) => {
-    console.log(idItem);
     return {
         type: 'STARSHIP_ADD_TO_CART',
         payload: idItem

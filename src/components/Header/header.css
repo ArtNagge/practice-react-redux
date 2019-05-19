@@ -18,9 +18,23 @@ nav a {
     color: #343434;
     text-decoration: none;
     padding: 5px 10px;
+    position: relative;
     transition: all .1s ease;
 }
 nav a:hover {
+    background-color: #343434;
+    color: #fff;
+}
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     background-color: #343434;
     color: #fff;
 }
