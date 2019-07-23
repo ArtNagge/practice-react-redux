@@ -1,7 +1,31 @@
-## Practice create React + Redux app
+## Основная информация
 
-Uses:
-### `React`
-### `React-Router`
-### `Redux`
-### `React-Redux`
+Практика создания приолжения на React в связке с Redux.
+
+Использовалл:
+```
+React
+React-Router
+Redux
+React-Redux
+```
+ 
+# Запуск прилолжения
+ 
+Для установки всех необходимых пакетов:
+### `npm install`
+ 
+Для запуска приложения:
+### `npm start`
+или если используем yarn
+### `yarn start`
+
+Для того, чтобы собрать билд:
+### `npm run build`
+или если используем yarn
+### `yarn build`
+
+Для того, чтобы можно было вносить изменения в WebPack:
+### `npm run eject`
+или если используем yarn
+### `yarn eject`
